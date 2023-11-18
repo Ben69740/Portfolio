@@ -70,6 +70,7 @@ if selected == 'Accueil':
 if selected == 'Projets':
         option_submenu = st.sidebar.radio('Mes Projets réalisés', ('Preface',
                                                                    'Bank-Marketing-Prediction',
+                                                                   'Entrepôt de Livraisons',
                                                                    'API - Chess Player Analytics',
                                                                    'API-Cursus-Universitaire' ,
                                                                    'Série Temporelles : Températures Terrestres',
@@ -117,6 +118,28 @@ if selected == 'Projets':
                         data=pbix_data,
                         key="file_download",
                         file_name="Bank-Marketing-Prediction.pbix")
+                    
+                    
+######################################################################################################
+        elif option_submenu == 'Entrepôt de Livraisons':
+            st.markdown("<h3 style='color:darkgreen;font-size:30px;text-align:center'>Analyse d'un Entrepôt de Livraisons.</h3>", unsafe_allow_html=True)
+            st.write("----------------------------------------------------------------------------------------------")
+            st.markdown("<h3 style='color:darkcyan;font-weight:bold;font-size:25px;text-align:center'>Pour ce projet, on m'a demandé de faire une analyse complète sur l'évolution des livraisons, le temps d'attente en entrepôt et une analyse complète des dommages sur les colis, étiquettes et les colis retournés.</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='color:grey;font-size:15px;text-align:center'>Je vous invite à cliquer sur le lien en bas de page afin d'avoir accès au dashboard.</h3>", unsafe_allow_html=True)
+            st.write("----------------------------------------------------------------------------------------------")
+            st.markdown("<h3 style='color:grey;font-size:17px;'>Objectif de ce projet: Analyse d'un entrepôt de livraisons.</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='color:grey;font-size:17px;'>Contenu:</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='color:grey;font-size:17px;'>- Exploration et nettoyage des données.</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='color:grey;font-size:17px;'>- Créations de KPIs.</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='color:grey;font-size:17px;'>- Mise en forme des pages dans Looker Studio.</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='color:grey;font-size:17px;'>- Finalisation du tableau de bord.</h3>", unsafe_allow_html=True)
+            st.write("----------------------------------------------------------------------------------------------")
+            col201, col202, col203, col204 = st.columns([3.5,2,2,3])
+            with col201:st.write(" ")
+            with col202:
+                st.image("LookerStudio-logo.png")
+            with col203:
+                st.write("[Dashboard](https://lookerstudio.google.com/reporting/7f085e4c-1f06-45b3-86b2-fe9fc61ed190)")
 ######################################################################################################        
         elif option_submenu == 'API - Chess Player Analytics':
             st.markdown("<h3 style='color:darkgreen;font-size:30px;text-align:center'>API - Chess Player Analytics.</h3>", unsafe_allow_html=True)
