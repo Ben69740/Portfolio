@@ -66,28 +66,35 @@ if selected == 'Accueil':
     st.markdown("<h3 style='color:grey;font-size:17px;'>Je suis titulaire d'un masters 2 en International Marketing auprès de l'INSEEC Business School.</h3>", unsafe_allow_html=True)
     st.markdown("<h3 style='color:grey;font-size:17px;'>Ma reconversion professionnelle a commencé par plusieurs mois de formation auprès de Datascientest, organisme de formation reconnu. Leurs formations sont notamment certifiées par Les Mines Paris Tech. Je suis donc fier d'avoir réussi ce parcours de formation exigeant.</h3>", unsafe_allow_html=True)
     st.markdown("<h3 style='color:grey;font-size:17px;'>Durant cette formation, j'ai réalisé un projet d'entreprise concret afin de mettre en pratique mes nouvelles compétences. Vous retrouverez ce projet dans la rubrique : Projets - Bank Marketing Prediction.</h3>", unsafe_allow_html=True)
+
 ######################################################################################################
 if selected == 'Projets':
         option_submenu = st.sidebar.radio('Mes Projets réalisés', ('Preface',
-                                                                   'Bank-Marketing-Prediction',
-                                                                   'Entrepôt de Livraisons',
-                                                                   'API - Chess Player Analytics',
-                                                                   'API-Cursus-Universitaire' ,
-                                                                   'Série Temporelles : Températures Terrestres',
-                                                                   'World Happyness Report',
-                                                                   'StoryTelling - VideoGames - Sales',
-                                                                   'StoryTelling - My Company - Sales'))
+                                                                   'DashBoard / BI : Analyse des Données Entreprise',
+                                                                   'DashBoard / BI : Entrepôt de Livraisons',
+                                                                   'Python / ML : Bank-Marketing-Prediction',
+                                                                   'Python : World Happyness Report',
+                                                                   'Python / API : Chess Player Analytics',
+                                                                   'Python / API : Cursus-Universitaire' ,
+                                                                   'Python / Série Temporelles : Températures Terrestres',
+                                                                   'Python / StoryTelling - VideoGames - Sales',
+                                                                   'Python / StoryTelling - My Company - Sales'))
         st.sidebar.write('------------------------------------------------------')
 ######################################################################################################        
         if option_submenu == 'Preface':
-            st.markdown("<h3 style='color:darkcyan;font-weight:bold;font-size:35px;text-align:center'>Preface</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='color:darkcyan;font-weight:bold;font-size:35px;text-align:center'>MES REALISATIONS</h3>", unsafe_allow_html=True)
             st.write("----------------------------------------------------------------------------------------------")
             st.markdown("<h3 style='color:grey;font-size:17px;text-align:center'>Vous retrouverez ici, toutes mes réalisations.</h3>", unsafe_allow_html=True)
-            st.markdown("<h3 style='color:grey;font-size:17px;text-align:center'>Veuillez choisir un projet dans le menu à gauche de la page.</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='color:grey;font-size:17px;text-align:center'>Elles sont rangées en trois grandes parties:</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='color:grey;font-size:17px;text-align:center'>- Les réalisation BI : regroupant les dashboard, las analyses BI sour Power BI et Looker Studio.</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='color:grey;font-size:17px;text-align:center'>- Les réalisations Python : ce sont les travaux de machine learning, storytelling ou encore travaux avec les API avec le language Pyhton.</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='color:grey;font-size:17px;text-align:center'>- Mes autres projets, le plus souvent personnel, pour entretenir mes compétences.</h3>", unsafe_allow_html=True)
             st.markdown("<h3 style='color:grey;font-size:17px;text-align:center'>Concernant certains projets et dans un souci de clarté, vous serez redirigez vers une application Streamlit indépendante.</h3>", unsafe_allow_html=True)
             st.write("----------------------------------------------------------------------------------------------")
+
+            
 ######################################################################################################
-        elif option_submenu == 'Bank-Marketing-Prediction':
+        elif option_submenu == 'Python / ML : Bank-Marketing-Prediction':
             st.markdown("<h3 style='color:darkgreen;font-size:30px;text-align:center'>Bank Marketing Prediction.</h3>", unsafe_allow_html=True)
             st.write("----------------------------------------------------------------------------------------------")
             st.markdown("<h3 style='color:darkcyan;font-weight:bold;font-size:25px;text-align:center'>Informations sur le projet</h3>", unsafe_allow_html=True)
@@ -119,9 +126,33 @@ if selected == 'Projets':
                         key="file_download",
                         file_name="Bank-Marketing-Prediction.pbix")
                     
-                    
+        
+        
+        
 ######################################################################################################
-        elif option_submenu == 'Entrepôt de Livraisons':
+        elif option_submenu == 'DashBoard / BI : Analyse des Données Entreprise':
+            st.markdown("<h3 style='color:darkgreen;font-size:30px;text-align:center'>Analyse des Données Entreprise.</h3>", unsafe_allow_html=True)
+            st.write("----------------------------------------------------------------------------------------------")
+            st.markdown("<h3 style='color:darkcyan;font-weight:bold;font-size:25px;text-align:center'>Informations sur le projet</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='color:grey;font-size:15px;text-align:center'>Je vous invite à cliquer sur le lien en bas de page afin d'avoir accès au code et à l'analyse.</h3>", unsafe_allow_html=True)
+            st.write("----------------------------------------------------------------------------------------------")
+            st.markdown("<h3 style='color:grey;font-size:17px;'>Objectif de ce projet: Analyser les données de l'entreprise et mettre en forme un Tableau de Bord intéractif regroupant les perfromances commerciales, par industries, par unités et par division.</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='color:grey;font-size:17px;'>Contenu:</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='color:grey;font-size:17px;'>- Exploration et nettoyage des données.</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='color:grey;font-size:17px;'>- Mise en place de KPIS.</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='color:grey;font-size:17px;'>- Création des différentes pages du rapport.</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='color:grey;font-size:17px;'>- Création des intéractions et finalisation du rapport.</h3>", unsafe_allow_html=True)
+            st.write("----------------------------------------------------------------------------------------------")
+            path_to_pbix_file = "Bank-Marketing-Prediction.pbix"
+            with open(path_to_pbix_file, "rb") as f:
+                    pbix_data = f.read()
+                    st.download_button(
+                        label="Cliquez ici pour télécharger le fichier .pbix",
+                        data=pbix_data,
+                        key="file_download",
+                        file_name="Bank-Marketing-Prediction.pbix")        
+######################################################################################################
+        elif option_submenu == 'DashBoard / BI : Entrepôt de Livraisons':
             st.markdown("<h3 style='color:darkgreen;font-size:30px;text-align:center'>Analyse d'un Entrepôt de Livraisons.</h3>", unsafe_allow_html=True)
             st.write("----------------------------------------------------------------------------------------------")
             st.markdown("<h3 style='color:darkcyan;font-weight:bold;font-size:25px;text-align:center'>Pour ce projet, on m'a demandé de faire une analyse complète sur l'évolution des livraisons, le temps d'attente en entrepôt et une analyse complète des dommages sur les colis, étiquettes et les colis retournés.</h3>", unsafe_allow_html=True)
@@ -141,7 +172,7 @@ if selected == 'Projets':
             with col203:
                 st.write("[Dashboard](https://lookerstudio.google.com/reporting/7f085e4c-1f06-45b3-86b2-fe9fc61ed190)")
 ######################################################################################################        
-        elif option_submenu == 'API - Chess Player Analytics':
+        elif option_submenu == 'Python / API : Chess Player Analytics':
             st.markdown("<h3 style='color:darkgreen;font-size:30px;text-align:center'>API - Chess Player Analytics.</h3>", unsafe_allow_html=True)
             st.write("----------------------------------------------------------------------------------------------")
             st.markdown("<h3 style='color:darkcyan;font-weight:bold;font-size:25px;text-align:center'>Informations sur le projet</h3>", unsafe_allow_html=True)
@@ -175,122 +206,6 @@ if selected == 'Projets':
             
             st.markdown("<h3 style='color:grey;font-size:17px;'>Nous avons désormais accès à de nombreuses informations sur le joueur choisi.</h3>", unsafe_allow_html=True) 
             st.write("----------------------------------------------------------------------------------------------")
-            st.markdown("<h3 style='color:darkgreen;text-align:center;font-size:17px;'>Récupération des données des 100 premiers joueurs</h3>", unsafe_allow_html=True)
-            import pandas as pd
-            joueurs = []
-            for joueur in grandmasters[0:100]:
-                joueurs.append(extract_player_info(joueur))
-            df_gms = pd.DataFrame(joueurs)
-            df_gms = df_gms.drop(["url", "is_streamer", "avatar", "@id", "verified", "location", "status", "twitch_url"], axis=1)
-            country_endpoints = df_gms['country'].unique()
-            country_dict = {}
-            for endpoint in country_endpoints:
-                headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
-                          }
-                country_name = requests.get(endpoint, headers=headers).json()['name']
-                country_dict[endpoint] = country_name
-            df_gms['country'] = df_gms['country'].replace(country_dict)
-            st.write(df_gms)
-            st.markdown("<h3 style='color:grey;font-size:17px;'>Nous avons maintenant, toutes les informations concernant les 100 premiers joueurs.</h3>", unsafe_allow_html=True) 
-            st.write("----------------------------------------------------------------------------------------------")
-            st.markdown("<h3 style='color:darkgreen;text-align:center;font-size:17px;'>Récupération des données statistiques d'un joueur</h3>", unsafe_allow_html=True)
-            
-            def get_player_stats(player_name):
-                headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
-                          }
-                endpoint = "https://api.chess.com/pub/player/{}/stats".format(player_name)
-                player_stats = requests.get(endpoint, headers=headers).json()
-                return player_stats
-            stats_erik = get_player_stats("erik")
-            st.write(stats_erik)
-            st.markdown("<h3 style='color:black;font-size:17px;'>Voici l'ensemble des statistiques de jeu du joueur 'erik'.</h3>", unsafe_allow_html=True) 
-            st.write("----------------------------------------------------------------------------------------------")
-            st.markdown("<h3 style='color:darkgreen;text-align:center;font-size:17px;'>Récupération des données statistiques des 100 premiers joueurs</h3>", unsafe_allow_html=True)
-            stats_joueurs = []
-            for joueur in grandmasters[0:100]:
-                stats_joueurs.append(get_player_stats(joueur))
-            df_gms_stats = pd.DataFrame(stats_joueurs)
-            st.write(df_gms_stats)
-            st.markdown("<h3 style='color:grey;font-size:17px;'>Nous avons maintenant, toutes les statistiques concernant les 100 premiers joueurs.</h3>", unsafe_allow_html=True)
-            st.write("----------------------------------------------------------------------------------------------")
-            st.markdown("<h3 style='color:darkgreen;text-align:center;font-size:17px;'>Création de KPIs</h3>", unsafe_allow_html=True)
-            stats_joueur = []
-            for nom in df_gms['username']:    
-                info_joueur = {}
-                info_joueur['Nom Joueur'] = nom
-                stats_player = get_player_stats(nom) 
-                key = list(stats_player.keys())
-                if 'chess_rapid' in key:
-                    stats_rapid = stats_player['chess_rapid']    
-                    total_joue = stats_rapid['record']['win'] + stats_rapid['record']['loss'] + stats_rapid['record']['draw']
-                    info_joueur['Moyenne Rapid Victoire'] = stats_rapid['record']['win'] / total_joue
-                    info_joueur['Moyenne Rapid Défaite'] = stats_rapid['record']['loss'] / total_joue
-                    info_joueur['Moyenne Rapid Egalité'] = stats_rapid['record']['draw'] / total_joue
-                    info_joueur['Dernier Note Rapid'] = stats_rapid['last']['rating']
-        
-                if 'chess_blitz' in key:
-                    stats_blitz = stats_player['chess_blitz']
-        
-                    total_joue = stats_blitz['record']['win'] + stats_blitz['record']['loss'] + stats_blitz['record']['draw']
-                    info_joueur['Moyenne Blitz Victoire'] = stats_blitz['record']['win'] / total_joue
-                    info_joueur['Moyenne Blitz Défaite'] = stats_blitz['record']['loss'] / total_joue
-                    info_joueur['Moyenne Blitz Egalité'] = stats_blitz['record']['draw'] / total_joue
-                    info_joueur['Dernier Note Blitz'] = stats_blitz['last']['rating']
-        
-                stats_joueur.append(info_joueur)
-            stats_final = pd.DataFrame(stats_joueur)
-            stats_final = stats_final.dropna()
-            st.write(stats_final)
-            st.markdown("<h3 style='color:grey;font-size:17px;'>Dans ce dataframe, nous avons créé les taux de victoires, défaites et de match nul pour deux systèmes de jeu. Nous avons également intégré la dernière note obtenu par le jeu pour chaque système de jeu.</h3>", unsafe_allow_html=True)
-            st.write("----------------------------------------------------------------------------------------------")
-            st.markdown("<h3 style='color:darkgreen;text-align:center;font-size:17px;'>Data Visualisation</h3>", unsafe_allow_html=True)
-            
-            import matplotlib.pyplot as plt
-            import seaborn as sns
-            fig, ax = plt.subplots(figsize=(20,10))
-            sns.lineplot(data=stats_final, x='Nom Joueur', y='Moyenne Rapid Victoire', color='darkcyan')
-            plt.title("Taux de Victoire pour le système de jeu 'Rapid'", fontsize=25, color='darkblue', weight='bold')
-            plt.gca().set_xticks([])
-            st.pyplot(fig)
-            
-            fig, ax = plt.subplots(figsize=(20,10))
-            sns.lineplot(data=stats_final, x='Nom Joueur', y='Dernier Note Rapid', color='darkcyan')
-            plt.title("Dernière Note obtenue dans le système de jeu 'Rapid'", fontsize=25, color='darkblue', weight='bold')
-            plt.gca().set_xticks([])
-            st.pyplot(fig)
-            
-            st.markdown("<h3 style='color:grey;font-size:17px;'>Nous remarquons que les taux de victoires sont hétérogènes. Certains joueurs ont un taux de victoire de 1 soit 100% de victoires quand un grand nombre de joueurs sont à environ 40% de taux de victoires.</h3>", unsafe_allow_html=True)
-            
-            fig, ax = plt.subplots(figsize=(20,10))
-            sns.lineplot(data=stats_final, x='Nom Joueur', y='Moyenne Blitz Victoire', color='darkblue')
-            plt.title("Taux de Victoire pour le système de jeu 'Blitz'", fontsize=25, color='darkblue', weight='bold')
-            plt.gca().set_xticks([])
-            st.pyplot(fig)
-            
-            fig, ax = plt.subplots(figsize=(20,10))
-            sns.lineplot(data=stats_final, x='Nom Joueur', y='Dernier Note Blitz', color='darkblue')
-            plt.title("Dernière Note obtenue dans le système de jeu 'Blitz", fontsize=25, color='darkblue', weight='bold')
-            plt.gca().set_xticks([])
-            st.pyplot(fig)
-            
-            st.markdown("<h3 style='color:grey;font-size:17px;'>Concernant le système de jeu 'Blitz', les taux de victoire sont beaucoup plus homogènes malgrè quelques joueurs qui se démarquent soit négativement ou positivement. Rappelons que le système de jeu 'Blitz' est un système où les joueurs ont 10 minutes pour jouer, il y a donc une donnée temps qui peut influencer les résultats.</h3>", unsafe_allow_html=True)
-            st.write("----------------------------------------------------------------------------------------------")
-            st.markdown("<h3 style='color:darkgreen;text-align:center;font-size:17px;'>Autres Data Visualisation</h3>", unsafe_allow_html=True)
-            fig, ax = plt.subplots(figsize=(20,10))
-            sns.countplot(data = df_gms, x='country')
-            plt.title("Nombre de joueurs par pays", fontsize=25, color='darkblue', weight='bold')
-            plt.xticks(rotation=90)
-            st.pyplot(fig)
-            st.markdown("<h3 style='color:grey;font-size:17px;'>Les Etats-Unis sont le pays le plus représenté suivi par l'Inde et la Russie.</h3>", unsafe_allow_html=True)
-            
-            df_gms = df_gms.dropna()
-            fig, ax = plt.subplots(figsize=(20,10))
-            sns.countplot(data = df_gms, x='league')
-            plt.title("Distribution des ligues", fontsize=25, color='darkblue', weight='bold')
-            plt.xticks(rotation=90)
-            st.pyplot(fig)
-            st.markdown("<h3 style='color:grey;font-size:17px;'>Toutes les ligues sont globalement distribuées de la même façon. Nous remarquons, en revanche, la ligue 'Crystal' qui se détache légèrement.</h3>", unsafe_allow_html=True)
-            st.markdown("<h3 style='color:grey;font-size:17px;'>Merci de votre attention pour ce projet, si vous souhaitez parcourir la totalité du code, merci de cliquer sur l'icone kaggle en-dessous.</h3>", unsafe_allow_html=True)
             col201, col202, col203, col204 = st.columns([3.5,2,2,3])
             with col201:st.write(" ")
             with col202:
@@ -300,7 +215,7 @@ if selected == 'Projets':
             with col204:st.write(" ")
 ######################################################################################################
 
-        elif option_submenu == 'Série Temporelles : Températures Terrestres':
+        elif option_submenu == 'Python / Série Temporelles : Températures Terrestres':
             st.markdown("<h3 style='color:darkgreen;font-size:30px;text-align:center'>Températures Terrestres.</h3>", unsafe_allow_html=True)
             st.markdown("<h3 style='color:grey;font-size:15px;text-align:center'>Je vous invite à cliquer sur le lien en bas de page afin d'avoir accès au code et à l'analyse.</h3>", unsafe_allow_html=True)
             st.write("----------------------------------------------------------------------------------------------")
@@ -343,7 +258,7 @@ if selected == 'Projets':
 #####################################################################################################
         
 ###################################################################################################
-        elif option_submenu == 'API-Cursus-Universitaire':
+        elif option_submenu == 'Python / API : Cursus-Universitaire':
             st.markdown("<h3 style='color:darkgreen;font-size:30px;text-align:center'>API - Cursus Universitaires.</h3>", unsafe_allow_html=True)
             st.write("----------------------------------------------------------------------------------------------")
             st.markdown("<h3 style='color:darkcyan;font-weight:bold;font-size:25px;text-align:center'>Informations sur le projet</h3>", unsafe_allow_html=True)
@@ -364,7 +279,7 @@ if selected == 'Projets':
             st.write("en cours d'ajout")
 #####################################################################################################
 
-        elif option_submenu == 'World Happyness Report':
+        elif option_submenu == 'Python : World Happyness Report':
             st.markdown("<h3 style='color:darkgreen;font-size:30px;text-align:center'>World Happyness Report.</h3>", unsafe_allow_html=True)
             st.markdown("<h3 style='color:grey;font-size:15px;text-align:center'>Je vous invite à cliquer sur le lien en bas de page afin d'avoir accès au code et à l'analyse.</h3>", unsafe_allow_html=True)
             st.write("----------------------------------------------------------------------------------------------")
@@ -406,7 +321,7 @@ if selected == 'Projets':
             with col204:st.write(" ")
             
 #############################################################################################################            
-        elif option_submenu == 'StoryTelling - VideoGames - Sales':
+        elif option_submenu == 'Python / StoryTelling - VideoGames - Sales':
             st.markdown("<h3 style='color:darkgreen;font-size:30px;text-align:center'>StoryTelling - Video Games Sales.</h3>", unsafe_allow_html=True)
             st.markdown("<h3 style='color:grey;font-size:15px;text-align:center'>Je vous invite à cliquer sur le lien en bas de page afin d'avoir accès au code et à l'analyse.</h3>", unsafe_allow_html=True)
             st.write("----------------------------------------------------------------------------------------------")
@@ -447,7 +362,7 @@ if selected == 'Projets':
                 st.write("[StoryTelling - Video Games Sales](https://www.kaggle.com/code/benjaminchartier/video-games-sales-analyse)")
             with col204:st.write(" ")
 ##############################################################################################################
-        elif option_submenu == 'StoryTelling - My Company - Sales':
+        elif option_submenu == 'Python / StoryTelling - My Company - Sales':
             st.markdown("<h3 style='color:darkgreen;font-size:30px;text-align:center'>StoryTelling - My Company - Sales.</h3>", unsafe_allow_html=True)
             st.markdown("<h3 style='color:grey;font-size:15px;text-align:center'>Je vous invite à cliquer sur le lien en bas de page afin d'avoir accès au code et à l'analyse.</h3>", unsafe_allow_html=True)
             st.write("----------------------------------------------------------------------------------------------")
