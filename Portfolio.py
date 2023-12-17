@@ -143,11 +143,16 @@ if selected == 'Projets':
             st.markdown("<h3 style='color:grey;font-size:17px;'>- Création des différentes pages du rapport.</h3>", unsafe_allow_html=True)
             st.markdown("<h3 style='color:grey;font-size:17px;'>- Création des intéractions et finalisation du rapport.</h3>", unsafe_allow_html=True)
             st.write("----------------------------------------------------------------------------------------------")
+            st.markdown("<h3 style='color:black;font-size:20px;'>Les tables et les relations.</h3>", unsafe_allow_html=True)
+            st.image("Relation Table - Analyse Perf.png")
+            st.markdown("<h3 style='color:black;font-size:20px;'>Le rapport.</h3>", unsafe_allow_html=True)
+            st.write("[Les rapport Power BI](https://youtu.be/uffu-DTXuB8)")
+            st.write("----------------------------------------------------------------------------------------------")
             path_to_pbix_file = "Analyse de la Performance.pbix"
             with open(path_to_pbix_file, "rb") as f:
                     pbix_data = f.read()
                     st.download_button(
-                        label="Cliquez ici pour télécharger le fichier .pbix",
+                        label="Cliquez ici pour télécharger le fichier .pbix complet",
                         data=pbix_data,
                         key="file_download",
                         file_name="Analyse de la Performance.pbix")        
