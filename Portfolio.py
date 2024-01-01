@@ -70,6 +70,7 @@ if selected == 'Accueil':
 ######################################################################################################
 if selected == 'Projets':
         option_submenu = st.sidebar.radio('Mes Projets réalisés', ('Preface',
+                                                                   'Projet Complet - Statistiques PGA - Tour',
                                                                    'DashBoard / BI : Analyse des Données Entreprise',
                                                                    'DashBoard / BI : Entrepôt de Livraisons',
                                                                    'Python / ML : Bank-Marketing-Prediction',
@@ -366,6 +367,39 @@ if selected == 'Projets':
             with col203:
                 st.write("[StoryTelling - Video Games Sales](https://www.kaggle.com/code/benjaminchartier/video-games-sales-analyse)")
             with col204:st.write(" ")
+            
+##############################################################################################################
+        elif option_submenu == 'Projet Complet - Statistiques PGA - Tour':
+            st.markdown("<h3 style='color:darkgreen;font-size:30px;text-align:center'>Projet Compler : Statistiques PGA - Tour.</h3>", unsafe_allow_html=True)
+            st.write("----------------------------------------------------------------------------------------------")
+            st.markdown("<h3 style='color:darkcyan;font-weight:bold;font-size:25px;text-align:center'>Informations sur le projet</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='color:grey;font-size:15px;text-align:center'>Vous retrouverez au fur et à mesure de la page les liens des vidéos explicatives.</h3>", unsafe_allow_html=True)
+            st.write("----------------------------------------------------------------------------------------------")
+            st.markdown("<h3 style='color:grey;font-size:17px;'>Objectif de ce projet: Créer un dashboard Power BI regroupant les statistiques des joueurs PGA, des tournois et de l'ensemble des résultats de la saison 2023.</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='color:grey;font-size:17px;'>Contenu:</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='color:grey;font-size:17px;'>- Récupérer les données avec du web scraping.</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='color:grey;font-size:17px;'>- Contrôler et transformer les données avec intégration dans les bases de données.</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='color:grey;font-size:17px;'>- Faire un lien avec SQL Management Server et créer les bases de données.</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='color:grey;font-size:17px;'>- Faire le lien avec Power BI et création du dashboard.</h3>", unsafe_allow_html=True)
+            st.write("----------------------------------------------------------------------------------------------")
+            
+            st.markdown("<h3 style='color:black;font-size:20px;'>La récupération des données.</h3>", unsafe_allow_html=True)
+            st.image("webscraping.png")
+            st.write("----------------------------------------------------------------------------------------------")
+            
+            st.markdown("<h3 style='color:black;font-size:20px;'>Contrôle et transformation des données.</h3>", unsafe_allow_html=True)
+            st.image("PGA - Controle et Transformation.png")
+            st.write("----------------------------------------------------------------------------------------------")
+            
+            st.markdown("<h3 style='color:black;font-size:20px;'>Création des bases SQL.</h3>", unsafe_allow_html=True)
+            st.image("PGA - Base de données.png")
+            st.write("----------------------------------------------------------------------------------------------")
+            
+            st.markdown("<h3 style='color:black;font-size:20px;'>Création du rapport Power BI.</h3>", unsafe_allow_html=True)
+            st.image("PGA - le rapport.png")
+            
+            st.write("----------------------------------------------------------------------------------------------")
+            st.write("[Vidéo du projet](https://youtu.be/qrZ0u5u4E1A)")
 ##############################################################################################################
         elif option_submenu == 'Python / StoryTelling - My Company - Sales':
             st.markdown("<h3 style='color:darkgreen;font-size:30px;text-align:center'>StoryTelling - My Company - Sales.</h3>", unsafe_allow_html=True)
