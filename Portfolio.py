@@ -397,6 +397,9 @@ if selected == 'Projets':
             
             st.markdown("<h3 style='color:black;font-size:20px;'>Création du rapport Power BI.</h3>", unsafe_allow_html=True)
             st.image("PGA - le rapport.png")
+
+            st.write("----------------------------------------------------------------------------------------------")
+            st.write("[La vidéo du projet](https://youtu.be/uffu-DTXuB8)")
 ##############################################################################################################
         elif option_submenu == 'Python / StoryTelling - My Company - Sales':
             st.markdown("<h3 style='color:darkgreen;font-size:30px;text-align:center'>StoryTelling - My Company - Sales.</h3>", unsafe_allow_html=True)
